@@ -13,7 +13,5 @@ $("#btn-submit").click(function () {
 });
 
 $("#text-tweet").keyup(function(){
-    let count = 280 - $("#text-tweet").val().length;
-    let textCount = $("#contador").text(`Restam ${count} pios`);
-    return textCount;
+    return $("#contador").text(`Restam ${280 - $("#text-tweet").val().length} pios`);
 })
