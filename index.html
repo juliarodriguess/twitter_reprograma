@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Tuíti</title>
 </head>
 <body>
@@ -18,16 +19,16 @@
     <p class="h1 text-center mt-5">Tuíti</p>
     <form action="" class="d-flex flex-column align-items-center">
         <div class="form-group mx-auto col-6 mt-3">
-            <label for="exampleFormControlTextarea1">Dê o seu piado:</label>
-            <textarea class="form-control" id="text-tweet" rows="3" placeholder="Piu!"></textarea>
+            <label for="exampleFormControlTextarea1" name="tweet">Dê o seu piado:</label>
+            <textarea class="form-control" id="text-tweet" rows="3" placeholder="Piu!" name="tweet"></textarea>
+            <p class="text-center m-1" id="contador"></p>
         </div>
-        <p class="text-center">Restam x caracteres</p>
         <button type="button" class="btn btn-primary mx-center mt-3" id="btn-submit">Cantar</button>
     </form>
-    <section id=tweets>
-        <div>
-            <p class="h3 text-center mt-5" id=fim>Fim</p>
-        </div>
+    <section id=tweets class="d-flex flex-column justify-content-center align-items-center">
+        <figure class="w-25 d-flex justify-content-md-center m-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Creative-Tail-Animal-bird.svg/1024px-Creative-Tail-Animal-bird.svg.png" alt="Tuíti" id="img-fim">
+        </figure>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
