@@ -9,10 +9,11 @@ $("#btn-submit").click(function () {
         </section>`
     );
     $("#text-tweet").val("");
+    $("#contador").text(`Restam 280 pios`);
 });
 
 $("#text-tweet").keyup(function(){
     let count = 280 - $("#text-tweet").val().length;
-    let text = $("#contador").text(`Restam ${count} pios`);
-    return text;
+    let textCount = $("#contador").text(`Restam ${count} pios`);
+    return textCount;
 })
